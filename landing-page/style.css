@@ -45,7 +45,6 @@ a {
 /* ========================
    NAVBAR
 ======================== */
-
 .navbar {
   height: 65px;
   display: flex;
@@ -123,11 +122,10 @@ a {
 }
 
 .background-img {
-  width: 100%;
-  height: 480px;
-  border-radius: 16px;
+  width: 480px;
   padding: 8px;
-  opacity: 60%;
+  border-radius: 16px;
+  object-fit: cover;
 }
 
 .background-desc {
@@ -149,9 +147,11 @@ a {
 ======================== */
 
 .categories {
+  width: 480px;
   display: flex;
   gap: 8px;
   padding-left: 8px;
+  overflow-x: scroll;
 }
 
 .categories-title {
@@ -225,6 +225,7 @@ a {
   padding: 8px;
   gap: 12px;
   margin-bottom: 24px;
+  overflow-x: scroll;
 }
 
 .trending-title {
@@ -267,11 +268,26 @@ a {
   gap: 1rem;
 }
 
+@media (min-width: 481px) {
+  .background-img {
+    width: 100%;
+    height: 480px;
+  }
+}
+
 /* ========================
    DESKTOP
 ======================== */
 
 @media (min-width: 768px) {
+  .background-img {
+    width: 100%;
+    height: 480px;
+    border-radius: 16px;
+    padding: 8px;
+    opacity: 60%;
+  }
+
   .navbar-menu {
     display: block;
   }
@@ -314,6 +330,8 @@ a {
   .categories {
     justify-content: space-evenly;
     padding-left: 0px;
+    overflow: hidden;
+    width: 100%;
   }
 
   .categories-img {
@@ -345,6 +363,10 @@ a {
     padding: 16px 0px;
     gap: 4px;
     align-content: center;
+  }
+
+  .trending {
+    overflow-x: hidden;
   }
 
   .trending-title {
