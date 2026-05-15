@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Management System</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <nav
+          class="h-15 flex justify-between items-center py-3 px-5 border-b border-black"
+        >
+          <div class="w-27 flex gap-2">
+            <img src="./assets/icons/dibiedu.svg" alt="Icon DibiEdu" />
+            <p class="title-color"><strong>DibiEdu</strong></p>
+          </div>
+          <div class="flex">
+            <ul
+              class="hidden text-primary md:flex md:w-110 md:h-10 md:gap-6 md:justify-center md:pt-2"
+            >
+              <li><a href="#home">Home</a></li>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href="../landing-page/index.html">Landing Page</a>
+              </li>
+            </ul>
+            <ul class="pt-2 pr-2 md:hidden">
+              <li><a href="../landing-page/index.html">Landing Page</a></li>
+            </ul>
+            <button class="btn block w-22 h-10">
+              <a href="#contact">Sign Up</a>
+            </button>
+          </div>
+        </nav>
+      </header>
+    </section>
+    <main id="container" class="md:w-258 md:flex md:flex-col md:mx-auto">
+      <section id="home">
+        <div class="p-4 relative flex items-center justify-center">
+          <img
+            class="h-120 w-full rounded-2xl block md:h-120 md:object-cover"
+            src="./assets/images/background-learn.jpg"
+            alt="background image"
+          />
+          <div
+            class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-center"
+          >
+            <h1 class="text-2xl font-bold md:text-3xl">
+              Unlock Your Potential with EduLearn
+            </h1>
+            <p>
+              Embark on a journey of knowledge and skill development with our
+              comprehensive online courses. Learn at your own pace, anytime,
+              anywhere.
+            </p>
+            <button class="btn h-10 w-32 mx-auto mt-4 block">
+              <a href="../landing-page/index.html">Start Learning</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="w-180 md:w-full px-5">
+        <div class="mb-5">
+          <h2 class="title-color text-2xl font-bold">Why Choose EduLearn?</h2>
+          <p class="text-primary">
+            Our platform is designed to provide a seamless and effective
+            learning experience, ensuring you gain the skills you need to
+            succeed.
+          </p>
+        </div>
+        <div class="flex justify-between items-center gap-2 mb-5">
+          <div>
+            <img src="./assets/icons/icon1.svg" alt="book" />
+            <p class="text-description">
+              <span class="title-color block font-bold">Online Material</span>
+              Access a vast library of high-quality learning materials,
+              including videos, articles, and interactive content.
+            </p>
+          </div>
+          <div>
+            <img src="./assets/icons/icon2.svg" alt="book" />
+            <p class="text-description">
+              <span class="title-color block font-bold"
+                >Quizzes & Assignment</span
+              >
+              Test your knowledge and reinforce your learning with engaging
+              quizzes and practical assignments.
+            </p>
+          </div>
+          <div>
+            <img src="./assets/icons/icon3.svg" alt="book" />
+            <p class="text-description">
+              <span class="title-color block font-bold">Certificates</span>
+              Earn certificates upon completion of courses, showcasing your
+              achievements and enhancing your credentials.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="w-180 md:w-full px-5 grid grid-cols-3 gap-2">
+        <div class="col-span-3">
+          <h3 class="title-color text-2xl h-12 font-bold">Featured Courses</h3>
+        </div>
+        <div>
+          <img
+            class="img"
+            src="./assets/images/featured1.png"
+            alt="Web Development"
+          />
+          <p class="text-description">
+            <span class="title-color block font-bold"
+              >Web Development Fundamentals</span
+            >
+            Learn the basics of HTML, CSS, and JavaScript to build your first
+            website.
+          </p>
+        </div>
+        <div>
+          <img
+            class="img"
+            src="./assets/images/featured2.png"
+            alt="Web Development"
+          />
+          <p class="text-description">
+            <span class="title-color block font-bold"
+              >Advanced JavaScript Techniques</span
+            >
+            Dive deep into JavaScript concepts like asynchronous programming,
+            closures, and ES6 features.
+          </p>
+        </div>
+        <div>
+          <img
+            class="img"
+            src="./assets/images/featured3.png"
+            alt="Web Development"
+          />
+          <p class="text-description">
+            <span class="title-color block font-bold"
+              >Responsive Design Mastery</span
+            >
+            Master the art of creating websites that adapt to different screen
+            sizes and devices.
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="px-5 mb-5">
+        <div class="text-center mt-10">
+          <button
+            class="title-color hover:cursor-pointer hover:bg-gray-300 focus:bg-[#E8EBF2] w-40 h-10 px-4 rounded-md mb-5 md:mb-10 bg-[#E8EBF2]"
+          >
+            View All Courses
+          </button>
+        </div>
+        <ul class="text-description flex justify-between">
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+          <li>Contact Us</li>
+        </ul>
+        <p class="text-description text-center mt-5">
+          © 2026 DibiEdu. All rights reserved.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

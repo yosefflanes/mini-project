@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #0d121c;
+  --text-color: #4d6699;
+}
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--text-color);
+}
+
+@layer components {
+  .title-color {
+    @apply text-primary;
+  }
+
+  .text-description {
+    @apply text-secondary;
+  }
+
+  .btn {
+    @apply bg-[#125CED] text-[#F7FAFC] rounded-2xl;
+  }
+
+  .btn:hover {
+    @apply cursor-pointer bg-blue-400;
+  }
+
+  .btn:focus {
+    @apply bg-blue-700;
+  }
+
+  .img {
+    @apply h-42 w-85 hover:scale-125;
+  }
+}
+
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+}
