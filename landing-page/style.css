@@ -168,10 +168,12 @@ a {
 
 .categories-img:hover {
   scale: 120%;
+  transition-duration: 300ms;
 }
 
 .trending-img:hover {
   scale: 120%;
+  transition-duration: 300ms;
 }
 
 /* ========================
@@ -204,6 +206,7 @@ a {
 
 .featured-img:hover {
   scale: 120%;
+  transition-duration: 300ms;
 }
 
 .btn-learn-more {
