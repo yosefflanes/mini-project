@@ -17,6 +17,10 @@
     @apply text-primary;
   }
 
+  .nav-list {
+    @apply hover:bg-blue-200 hover:rounded-md;
+  }
+
   .text-description {
     @apply text-secondary;
   }
@@ -34,7 +38,7 @@
   }
 
   .img {
-    @apply h-42 w-85 hover:scale-125;
+    @apply h-42 w-85 transition-transform duration-300 hover:scale-125;
   }
 }
 

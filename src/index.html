@@ -7,42 +7,42 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
-    <section>
-      <header>
-        <nav
-          class="h-15 flex justify-between items-center py-3 px-5 border-b border-black"
-        >
-          <div class="w-27 flex gap-2">
-            <img src="./assets/icons/dibiedu.svg" alt="Icon DibiEdu" />
-            <p class="title-color"><strong>DibiEdu</strong></p>
-          </div>
-          <div class="flex">
-            <ul
-              class="hidden text-primary md:flex md:w-110 md:h-10 md:gap-6 md:justify-center md:pt-2"
-            >
-              <li><a href="#home">Home</a></li>
-              <li><a href="#courses">Courses</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li>
-                <a href="../landing-page/index.html">Landing Page</a>
-              </li>
-            </ul>
-            <ul class="pt-2 pr-2 md:hidden">
-              <li><a href="../landing-page/index.html">Landing Page</a></li>
-            </ul>
-            <button class="btn block w-22 h-10">
-              <a href="#contact">Sign Up</a>
-            </button>
-          </div>
-        </nav>
-      </header>
-    </section>
+    <header>
+      <nav
+        class="fixed z-1 w-full bg-white/60 backdrop-blur-md mt-0 h-16 flex justify-between items-center py-3 px-5 border-b border-black"
+      >
+        <div class="w-28 flex gap-2">
+          <img src="./assets/icons/dibiedu.svg" alt="Icon DibiEdu" />
+          <p class="title-color"><strong>DibiEdu</strong></p>
+        </div>
+        <div class="flex">
+          <ul
+            class="hidden text-primary md:flex md:w-110 md:h-10 md:gap-6 md:justify-center md:pt-2"
+          >
+            <li class="nav-list"><a href="#home">Home</a></li>
+            <li class="nav-list"><a href="#courses">Courses</a></li>
+            <li class="nav-list"><a href="#about">About</a></li>
+            <li class="nav-list"><a href="#contact">Contact</a></li>
+            <li class="nav-list">
+              <a href="../landing-page/index.html">Landing Page</a>
+            </li>
+          </ul>
+          <ul class="pt-2 pr-2 md:hidden">
+            <li class="nav-list">
+              <a href="../landing-page/index.html">Landing Page</a>
+            </li>
+          </ul>
+          <button class="btn block w-24 h-10">
+            <a href="#contact">Sign Up</a>
+          </button>
+        </div>
+      </nav>
+    </header>
     <main id="container" class="md:w-258 md:flex md:flex-col md:mx-auto">
-      <section id="home">
+      <section id="home" class="md:mt-16">
         <div class="p-4 relative flex items-center justify-center">
           <img
-            class="h-120 w-full rounded-2xl block md:h-120 md:object-cover"
+            class="mt-14 h-120 w-full rounded-2xl block md:mt-0 md:h-120 md:object-cover"
             src="./assets/images/background-learn.jpg"
             alt="background image"
           />
@@ -75,7 +75,7 @@
         </div>
         <div class="flex justify-between items-center gap-2 mb-5">
           <div>
-            <img src="./assets/icons/icon1.svg" alt="book icon" />
+            <img src="./assets/icons/icon1.svg" alt="book" />
             <p class="text-description">
               <span class="title-color block font-bold">Online Material</span>
               Access a vast library of high-quality learning materials,
@@ -83,7 +83,7 @@
             </p>
           </div>
           <div>
-            <img src="./assets/icons/icon2.svg" alt="quizzes icon" />
+            <img src="./assets/icons/icon2.svg" alt="book" />
             <p class="text-description">
               <span class="title-color block font-bold"
                 >Quizzes & Assignment</span
@@ -93,7 +93,7 @@
             </p>
           </div>
           <div>
-            <img src="./assets/icons/icon3.svg" alt="certificates icon" />
+            <img src="./assets/icons/icon3.svg" alt="book" />
             <p class="text-description">
               <span class="title-color block font-bold">Certificates</span>
               Earn certificates upon completion of courses, showcasing your
@@ -125,7 +125,7 @@
           <img
             class="img"
             src="./assets/images/featured2.png"
-            alt="JavaScript image"
+            alt="Web Development"
           />
           <p class="text-description">
             <span class="title-color block font-bold"
@@ -139,7 +139,7 @@
           <img
             class="img"
             src="./assets/images/featured3.png"
-            alt="Responsive image"
+            alt="Web Development"
           />
           <p class="text-description">
             <span class="title-color block font-bold"
@@ -168,5 +168,12 @@
         </p>
       </section>
     </main>
+    <button
+      id="scroll-top-btn"
+      aria-label="Scroll ke atas"
+      class="fixed bottom-8 right-6 z-[99] w-[42px] h-[42px] rounded-full border border-gray-300 bg-white text-gray-700 text-lg cursor-pointer flex items-center justify-center opacity-0 pointer-events-none translate-y-2.5 transition-all duration-300 hover:shadow-md hover:border-gray-400"
+    >
+      &#8593;
+    </button>
   </body>
 </html>
